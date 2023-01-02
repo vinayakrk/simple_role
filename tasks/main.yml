@@ -1,0 +1,12 @@
+---
+- name: Create a directory
+  ansible.builtin.file:
+    path: /tmp/simple_role
+    mode: '0755'
+
+- name: Create a file
+  ansible.builtin.copy:
+    content: |
+      This is a demo file created by simple_role simple_role
+    dest: /tmp/simple_role/simple_file.txt
+    mode: '0644'
