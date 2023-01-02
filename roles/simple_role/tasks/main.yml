@@ -2,6 +2,7 @@
 - name: Create a directory
   ansible.builtin.file:
     path: /tmp/simple_role
+    state: directory
     mode: '0755'
 
 - name: Create a file
