@@ -1,6 +1,7 @@
 ---
 - name: Playbook
-  remote_user: oracle
+  become: true
+  become_user: oracle
   hosts: all
   roles:
     - simple_role
